@@ -15,6 +15,7 @@
 		88615F1B2978BA1A00F7AAF5 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88615F1A2978BA1A00F7AAF5 /* UploadViewController.swift */; };
 		88615F1D2978BA2800F7AAF5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88615F1C2978BA2800F7AAF5 /* SettingsViewController.swift */; };
 		88615F212978C33B00F7AAF5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 88615F202978C33B00F7AAF5 /* .gitignore */; };
+		88615F232978C3FF00F7AAF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88615F222978C3FE00F7AAF5 /* GoogleService-Info.plist */; };
 		88837DC2297848DE00F947C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837DC1297848DE00F947C7 /* AppDelegate.swift */; };
 		88837DC4297848DE00F947C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837DC3297848DE00F947C7 /* SceneDelegate.swift */; };
 		88837DC6297848DE00F947C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88837DC5297848DE00F947C7 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		88615F1A2978BA1A00F7AAF5 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		88615F1C2978BA2800F7AAF5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		88615F202978C33B00F7AAF5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		88615F222978C3FE00F7AAF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88837DBE297848DE00F947C7 /* FirebaseIGCloneExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseIGCloneExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88837DC1297848DE00F947C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88837DC3297848DE00F947C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				88837DCA297848E100F947C7 /* Assets.xcassets */,
 				88837DCC297848E100F947C7 /* LaunchScreen.storyboard */,
 				88837DCF297848E100F947C7 /* Info.plist */,
+				88615F222978C3FE00F7AAF5 /* GoogleService-Info.plist */,
 				88615F202978C33B00F7AAF5 /* .gitignore */,
 			);
 			path = FirebaseIGCloneExample;
@@ -156,6 +159,7 @@
 			files = (
 				88615F212978C33B00F7AAF5 /* .gitignore in Resources */,
 				88837DCE297848E100F947C7 /* LaunchScreen.storyboard in Resources */,
+				88615F232978C3FF00F7AAF5 /* GoogleService-Info.plist in Resources */,
 				88837DCB297848E100F947C7 /* Assets.xcassets in Resources */,
 				88837DC9297848DF00F947C7 /* Main.storyboard in Resources */,
 			);
