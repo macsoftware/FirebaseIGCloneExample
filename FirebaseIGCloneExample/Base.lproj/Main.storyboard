@@ -15,14 +15,58 @@
                     <view key="view" contentMode="scaleToFill" id="44u-1W-Qmc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap-to-select" translatesAutoresizingMaskIntoConstraints="NO" id="oAC-9a-Rlt">
+                                <rect key="frame" x="16" y="59" width="361" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oAC-9a-Rlt" secondAttribute="height" multiplier="361:347" id="tp2-WN-3Sb"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-5h-m8e">
+                                <rect key="frame" x="16" y="421" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="uCh-ob-EbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raK-z1-Y5t">
+                                <rect key="frame" x="124" y="463" width="144" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="1Mv-3A-C0S"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="c8D-sZ-c9K" eventType="touchUpInside" id="btN-Dk-6dV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a0h-1H-36X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oAC-9a-Rlt" firstAttribute="top" secondItem="a0h-1H-36X" secondAttribute="top" id="922-B0-Nc7"/>
+                            <constraint firstItem="raK-z1-Y5t" firstAttribute="top" secondItem="qDT-5h-m8e" secondAttribute="bottom" constant="8" id="EWW-Az-8PB"/>
+                            <constraint firstItem="oAC-9a-Rlt" firstAttribute="leading" secondItem="44u-1W-Qmc" secondAttribute="leadingMargin" id="He1-XR-glQ"/>
+                            <constraint firstItem="qDT-5h-m8e" firstAttribute="centerX" secondItem="raK-z1-Y5t" secondAttribute="centerX" id="KnP-Lx-dpD"/>
+                            <constraint firstItem="oAC-9a-Rlt" firstAttribute="trailing" secondItem="44u-1W-Qmc" secondAttribute="trailingMargin" id="W2h-bt-EK8"/>
+                            <constraint firstItem="oAC-9a-Rlt" firstAttribute="trailing" secondItem="qDT-5h-m8e" secondAttribute="trailing" id="WWM-zZ-Xb5"/>
+                            <constraint firstItem="a0h-1H-36X" firstAttribute="bottom" secondItem="raK-z1-Y5t" secondAttribute="bottom" constant="208" id="bqA-HO-FWJ"/>
+                            <constraint firstItem="raK-z1-Y5t" firstAttribute="leading" secondItem="a0h-1H-36X" secondAttribute="leading" constant="124" id="n2g-PB-3Ft"/>
+                            <constraint firstItem="oAC-9a-Rlt" firstAttribute="leading" secondItem="qDT-5h-m8e" secondAttribute="leading" id="rEj-Un-5Yk"/>
+                            <constraint firstItem="qDT-5h-m8e" firstAttribute="top" secondItem="oAC-9a-Rlt" secondAttribute="bottom" constant="15" id="wJe-aQ-NVR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="Pgh-0M-kCX"/>
+                    <connections>
+                        <outlet property="commentTextField" destination="qDT-5h-m8e" id="Ul8-r3-rkf"/>
+                        <outlet property="imageView" destination="oAC-9a-Rlt" id="ylD-3c-QEz"/>
+                        <outlet property="uploadButton" destination="raK-z1-Y5t" id="GPp-Tc-0Wn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LC1-b9-q3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="290"/>
+            <point key="canvasLocation" x="-846.56488549618314" y="289.43661971830988"/>
         </scene>
         <!--Feed-->
         <scene sceneID="KNM-z7-ZVh">
@@ -183,6 +227,7 @@
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="tap-to-select" width="750" height="750"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
