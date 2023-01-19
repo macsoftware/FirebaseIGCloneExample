@@ -43,7 +43,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="6LW-BZ-sWG">
             <objects>
-                <tabBarController id="ITg-ws-QBZ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="ITg-ws-QBZ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zN1-ZU-faj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g5f-xq-CyJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
